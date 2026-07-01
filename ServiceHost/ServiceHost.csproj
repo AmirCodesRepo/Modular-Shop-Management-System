@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Pages\ProductCategory\**" />
+    <Content Remove="Pages\ProductCategory\**" />
+    <EmbeddedResource Remove="Pages\ProductCategory\**" />
+    <None Remove="Pages\ProductCategory\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Accountmanagement.Configuration\AccountManagement.Configuration.csproj" />
+    <ProjectReference Include="..\DiscountManagement.Application.Contracts\DiscountManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\DiscountManagement.Configuration\DiscountManagement.Configuration.csproj" />
+    <ProjectReference Include="..\InventoryManagement.Application.Contracts\InventoryManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\InventoryManagement.Configure\InventoryManagement.Configure.csproj" />
+    <ProjectReference Include="..\ShopManagement.Configuration\ShopManagement.Configuration.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.28">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.23" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\ProductPicture\Slides\" />
+    <Folder Include="wwwroot\ProductPicture\چراغ-قوه\" />
+    <Folder Include="wwwroot\ProductPicture\چراغ-مطالعه\" />
+  </ItemGroup>
+
+</Project>
