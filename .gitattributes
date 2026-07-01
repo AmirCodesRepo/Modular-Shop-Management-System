@@ -1,0 +1,4 @@
+ServiceHost/wwwroot/**/*.js linguist-vendored=true
+ServiceHost/wwwroot/**/*.css linguist-vendored=true
+ServiceHost/wwwroot/lib/**/*.js linguist-vendored=true
+ServiceHost/wwwroot/lib/**/*.css linguist-vendored=true
